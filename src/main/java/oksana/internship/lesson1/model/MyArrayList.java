@@ -36,11 +36,11 @@ public class MyArrayList<T> {
      *
      * @param index - индекс элемента, который будет выведен на экран
      */
-    public void showItemByIndex(int index) {
+    public T showItemByIndex(int index) {
         if (isValidIndex(index))
             System.out.println("Элемент по индексу " + index + " = " + items[index]);
         else System.out.println("Index " + index + " is out of array");
-
+        return (T) items[index];
     }
 
     private boolean isValidIndex(int index) {

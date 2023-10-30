@@ -20,19 +20,34 @@ public class Main {
     public static void main(String[] args) {
 
         MyArrayList<Integer> arrayList = createArrayList(7, 9, 8);
-
+        /**
+         * @see MyArrayList#showArrayItems()
+         */
         arrayList.showArrayItems();
-
+        /**
+         * @see MyArrayList#showItemByIndex(int)
+         */
         arrayList.showItemByIndex(6); //получение элемента по индексу
-
+        /**
+         * @see  MyArrayList#addItemByIndex(int, Object)
+         */
         arrayList.addItem(1, 3); //добавление элемента по индексу
-
+        /**
+         * @see MyArrayList#removeByIndex(int)
+         */
         arrayList.removeByIndex(4); //удаление элемента по индексу
-
+        /**
+         * @see MyArrayList#setItem(int, Object)
+         */
         arrayList.setItem(3, 5); //заменить элемент по индексу
-
+        /**
+         * @see MyArrayList#sort()
+         */
         arrayList.sort(); //сортировка коллекции
         arrayList.showArrayItems();
+        /**
+         * @see MyArrayList#clearArray()
+         */
         arrayList.clearArray(); //очистка коллекции
     }
 
