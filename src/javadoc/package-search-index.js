@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"oksana.internship"},{"l":"oksana.internship.lesson1.comparator"},{"l":"oksana.internship.lesson1.model"}];updateSearchResults();
