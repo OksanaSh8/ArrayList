@@ -89,7 +89,7 @@ public class MyArrayList<T> {
      */
     public void removeByIndex(int index) {
         if (isValidIndex(index)) {
-            System.arraycopy(items, index + 1, items, index, currentSize - index);
+            System.arraycopy(items, index + 1, items, index, currentSize - index-1);
             currentSize--;
             showArrayItems();
         } else System.out.println("Index " + index + " is out of array");
@@ -148,8 +148,20 @@ public class MyArrayList<T> {
      * сортировка коллекции
      */
     public void sort() {
-        ComparatorArray comparator = new ComparatorArray<Integer>();
-        Arrays.sort((T[]) items, 0, currentSize, comparator);
+
+        Arrays.sort((T[]) items, 0, currentSize, comparator());
+    }
+
+    /**
+     * сортировка коллекции методом quicksort
+     */
+    public void quicksortArray() {
+        Quicksort quicksort = new Quicksort();
+        quicksort.quicksort((T[]) items, 0, currentSize - 1, comparator());
+    }
+
+    private Comparator comparator() {
+        return new ComparatorArray<T>();
     }
 
     /**
