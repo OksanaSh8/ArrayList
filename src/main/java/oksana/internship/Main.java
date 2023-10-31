@@ -19,7 +19,12 @@ public class Main {
      */
     public static void main(String[] args) {
 
-        MyArrayList<Integer> arrayList = createArrayList(7, 9, 8);
+        MyArrayList<Integer> arrayList = createArrayList(25,34,1, 71,92,2,4);
+
+        /**
+         * @see MyArrayList#quicksortArray()
+         */
+        arrayList.quicksortArray(); //сортировка коллекции методом quicksort
         /**
          * @see MyArrayList#showArrayItems()
          */
